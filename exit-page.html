@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exit-page.css">
+    <title>Exit Parking - Parking Management System</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Exit Parking</h1>
+    <form id="exitForm">
+        <label for="driverName">Driver Name:</label>
+        <input type="text" id="driverName" name="driverName" value="Yashintha Tharuka" disabled>
+
+        <label for="exitVehicleNumber">Vehicle Number:</label>
+        <input type="text" id="exitVehicleNumber" name="exitVehicleNumber" value="PA-1205" disabled>
+
+        <label for="exitEntryTime">Entry Time:</label>
+        <input type="text" id="exitEntryTime" name="exitEntryTime" value="12:03 A.M" disabled>
+
+        <label for="exitSelectedSlot">Parking Slot:</label>
+        <input type="text" id="exitSelectedSlot" name="exitSelectedSlot" value="SLOT 01" disabled>
+
+        <label for="parkingCharges">Parking Charges:</label>
+        <input type="text" id="parkingCharges" name="parkingCharges" value="100" disabled>
+
+        <button type="button" onclick="exitParking()">Exit Parking</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
