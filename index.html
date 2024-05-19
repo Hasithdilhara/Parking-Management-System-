@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Parking Management System</title>
+    <style>
+        /* Add styles for the typing animation */
+        #typingHeading {
+            overflow: hidden;
+            border-right: 0.15em solid orange; /* Change the color as needed */
+            white-space: nowrap;
+            margin: 0;
+            animation: typing 2.5s steps(20, end), blink-caret 0.75s infinite;
+        }
+    
+        /* Blinking caret for the typing animation */
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: orange; /* Change the color as needed */
+            }
+        }
+    
+        /* Typing animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+    </style>    
+</head>
+<body>
+
+<div class="container">
+    <h1 id="typingHeading">Parking Management System</h1>    
+    <form id="driverForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="nic">NIC:</label>
+        <input type="text" id="nic" name="nic" required>
+
+        <label for="vehicleNumber">Vehicle Number:</label>
+        <input type="text" id="vehicleNumber" name="vehicleNumber" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="entryTime">Entry Time:</label>
+        <input type="text" id="entryTime" name="entryTime" value="" disabled>
+
+        <label for="selectedSlot">Selected Parking Slot:</label>
+        <input type="text" id="selectedSlot" name="selectedSlot" value="SLOT 01" disabled>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
